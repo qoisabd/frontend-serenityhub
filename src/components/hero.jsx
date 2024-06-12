@@ -13,8 +13,7 @@ grid grid-cols-1 items-center px-4 pb-20 pt-5 md:px-20 lg:grid-cols-2'
           </div>
           <h1 className='mt-0 text-2xl font-semibold tracking-wider text-slate-900 md:mt-4 md:text-5xl'>SerenityHub :</h1>
           <h1 className='mt-0 text-2xl font-semibold tracking-wider text-slate-900 md:mt-4 md:text-5xl'>Platform Pengaduan</h1>
-          <h1 className='mt-0 text-2xl font-semibold tracking-wider text-slate-900 md:mt-4 md:text-5xl'>Masyarakat Pada</h1>
-          <h1 className='mt-0 text-2xl font-semibold tracking-wider text-slate-900 md:mt-4 md:text-5xl'>Dinas Perhubungan</h1>
+          <h1 className='mt-0 text-2xl font-semibold tracking-wider text-slate-900 md:mt-4 md:text-5xl'>Masyarakat Dishub</h1>
           <h1 className='mt-0 text-2xl font-semibold tracking-wider text-slate-900 md:mt-4 md:text-5xl'>Kota Serang</h1>
           <p className='mt-4 text-[1rem] leading-6 text-[#64748BBF] text-opacity-100'>
             {' '}
