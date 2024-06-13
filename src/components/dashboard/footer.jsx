@@ -34,7 +34,7 @@ function Footer() {
           <a className='text-blue-500' href='#'>
             Qois Abdul Qudus
           </a>{' '}
-          2024 v1.0 © SERENITY_LINK
+          2024 v1.0 © SERENITY_HUB
         </p>
       </footer>
     </>
