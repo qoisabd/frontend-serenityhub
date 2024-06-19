@@ -19,10 +19,10 @@ grid grid-cols-1 items-center px-4 pb-20 pt-5 md:px-20 lg:grid-cols-2'
             {' '}
             <span className='font-medium text-blue-600'>SerenityHub</span> adalah aplikasi yang berfungsi sebagai <span>platform pengaduan masyarakat</span>. Aplikasi ini memfasilitasi komunikasi antara{' '}
             <span className='font-medium text-blue-600'>masyarakat</span> dan <span className='font-medium text-blue-600'>pihak Dishub Kota Serang</span>, dengan tujuan menciptakan <span className='font-medium text-blue-600'>lingkungan</span> yang
-            lebih <span className='font-medium text-blue-600'>baik </span>dan lebih <span className='font-medium text-blue-600'>adil</span> untuk semua orang.
+            <span className='font-medium text-blue-600'> baik </span> untuk semua orang.
           </p>
           <p className='mt-4 text-[1rem] leading-6 text-[#64748BBF] text-opacity-100'>
-            Dengan aplikasi ini, pengguna dapat dengan mudah melaporkan masalah atau kejadian yang mereka alami atau saksikan, yang kemudian dapat ditindaklanjuti oleh pihak <span className='font-medium text-blue-600'>Dishub Kota Serang</span>.
+            Dengan aplikasi ini, masyarakat dapat dengan mudah melaporkan masalah atau kejadian yang mereka alami, yang kemudian dapat ditindaklanjuti oleh pihak <span className='font-medium text-blue-600'>Dishub Kota Serang</span>.
           </p>
           <p className='mt-6 text-[1rem] leading-6 text-[#64748BBF] text-opacity-100'>
             Jika Anda melihat atau mengalami sesuatu yang perlu dilaporkan, gunakan aplikasi ini dan tekan tombol <span className='font-medium text-blue-600'>Buat Laporan</span>. Mari kita bersama-sama{' '}
