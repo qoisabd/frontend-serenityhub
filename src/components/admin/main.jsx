@@ -54,7 +54,7 @@ const ReportCard = () => {
     <div className='m-2 my-8 md:px-4'>
       <div className='animate__fadeIn animate__animated animate__delay-0.5s box-border rounded-3xl bg-white px-4 py-8 drop-shadow md:p-12'>
         <div className=''>
-          <h2 className='text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl capitalize'>Lokasi Laporan Pengaduan</h2>
+          <h2 className='text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl capitalize'>Laporan Pengaduan</h2>
           <div className='grid grid-cols-1 gap-5 sm:grid-cols-4 mt-4'>
             {Object.entries(statusCount).map(([status, count]) => (
               <div key={status} className='group bg-white hover:bg-indigo-600 overflow-hidden shadow sm:rounded-lg cursor-pointer transition-all duration-100 ease-in'>
