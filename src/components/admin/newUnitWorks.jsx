@@ -201,7 +201,7 @@ const NewUnitWorks = () => {
               >
                 <input {...getInputProps()} />
                 <p className="text-center">
-                  Drag n drop some files here, or click to select files
+                  Klik disini untuk upload gambar (wajib)
                 </p>
                 <p className="text-center">Ukuran maksimal file: 2MB</p>
                 <p className="text-center"> Maskimal 1 foto</p>

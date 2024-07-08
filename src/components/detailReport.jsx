@@ -394,12 +394,12 @@ export default function DetailReport() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="col-span-1">
                 <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center ">
-                  <div className="flex flex-col">
+                  {/* <div className="flex flex-col">
                     <label className="font-semibold text-gray-900">
                       Nomor Laporan:
                     </label>
                     <p className="mb-4">{report._id}</p>
-                  </div>
+                  </div> */}
                   <div className="flex flex-col">
                     <label className="font-semibold text-gray-900">
                       Status:
@@ -433,7 +433,6 @@ export default function DetailReport() {
                   </label>
                   <p className="mb-4">{report.title}</p>
                 </div>
-
                 <div className="flex flex-col">
                   <label className="font-semibold text-gray-900">
                     Deskripsi Laporan:
@@ -545,7 +544,7 @@ export default function DetailReport() {
                     >
                       <input {...getInputProps()} />
                       <p className="text-center">
-                        Drag n drop some files here, or click to select files
+                        Klik disini untuk upload gambar (wajib)
                       </p>
                       <p className="text-center">
                         Ukuran maksimal per file: 2MB

@@ -383,7 +383,7 @@ const NewReport = () => {
               >
                 <input {...getInputProps()} />
                 <p className="text-center">
-                  Drag n drop some files here, or click to select files
+                  Klik disini untuk upload gambar (wajib)
                 </p>
                 <p className="text-center">Ukuran maksimal per file: 2MB</p>
                 <p className="text-center">Bukti maskimal 3 foto</p>

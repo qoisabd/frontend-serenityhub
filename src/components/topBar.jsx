@@ -38,7 +38,7 @@ export default function TopBar() {
               className=" flex items-center block w-full text-left text-red-500 font-bold"
             >
               <FiLogOut />
-              Logout
+              Keluar
             </Link>
           </div>
         </div>
