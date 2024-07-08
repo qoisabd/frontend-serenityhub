@@ -17,7 +17,7 @@ export default function ContentUser() {
           <GuardRoute
             element={
               <SearchAndListReport
-                title="Laporan"
+                title="Laporan Masuk"
                 url={`${import.meta.env.VITE_HOST_SERENITY}/report?${
                   status ? `status=${status}&` : null
                 }&`}

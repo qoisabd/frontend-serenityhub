@@ -60,7 +60,7 @@ const RegisterForm = () => {
           <div className="my-5 w-full rounded-lg bg-white shadow sm:max-w-md xl:p-0">
             <div className="space-y-4 p-6 sm:p-8 md:space-y-6">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
-                Create an account
+                Daftarkan Akunmu
               </h1>
               <form
                 className="space-y-4 md:space-y-6"
@@ -71,7 +71,7 @@ const RegisterForm = () => {
                     htmlFor="name"
                     className="mb-2 block text-sm font-medium text-gray-900"
                   >
-                    Name
+                    Nama
                   </label>
                   <input
                     type="text"
@@ -89,7 +89,7 @@ const RegisterForm = () => {
                     htmlFor="email"
                     className="mb-2 block text-sm font-medium text-gray-900"
                   >
-                    email
+                    Email
                   </label>
                   <input
                     type="email"
@@ -107,7 +107,7 @@ const RegisterForm = () => {
                     htmlFor="password"
                     className="mb-2 block text-sm font-medium text-gray-900"
                   >
-                    password
+                    Password
                   </label>
                   <input
                     type="password"
@@ -126,7 +126,7 @@ const RegisterForm = () => {
                     htmlFor="confirmPassword"
                     className="mb-2 block text-sm font-medium text-gray-900"
                   >
-                    confirm password
+                    Konfirmasi Password
                   </label>
                   <input
                     type="password"
@@ -144,15 +144,15 @@ const RegisterForm = () => {
                   type="submit"
                   className="w-full rounded-lg bg-blue-600 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-3"
                 >
-                  Create an account
+                  Daftar
                 </button>
                 <p className="text-sm font-light text-gray-500 ">
-                  Already have an account?{' '}
+                  Sudah punya akun?{' '}
                   <Link
                     to="/login"
                     className="text-primary-600 dark:text-primary-500 font-medium hover:underline"
                   >
-                    Login here
+                    Masuk disini
                   </Link>
                 </p>
               </form>

@@ -108,7 +108,7 @@ export default function SearchAndListReport({ title, url }) {
               <option value="" disabled>
                 Status
               </option>
-              <option value=" ">all</option>
+              <option value=" ">Semua</option>
               <option value="Menunggu">Menunggu</option>
               <option value="Diproses">Diproses</option>
               <option value="Selesai">Selesai</option>

@@ -156,7 +156,7 @@ export default function Officer() {
                       no
                     </th>
                     <th scope="col" className="px-6 py-3">
-                      name
+                      nama
                     </th>
                     <th scope="col" className="px-6 py-3">
                       level
@@ -165,7 +165,7 @@ export default function Officer() {
                       unit kerja
                     </th>
                     <th scope="col" className="px-6 py-3">
-                      action
+                      aksi
                     </th>
                   </tr>
                 </thead>
@@ -180,7 +180,7 @@ export default function Officer() {
                           {item.name}
                         </td>
                         <td className="py-2 md:py-4 px-6 border-b group-hover:text-gray-600 group-hover:font-semibold group-hover:bg-gray-200 ease-in transition-all duration-100">
-                          {item.role}
+                          Petugas
                         </td>
                         <td className="py-2 md:py-4 px-6 border-b group-hover:text-gray-600 group-hover:font-semibold group-hover:bg-gray-200 ease-in transition-all duration-100">
                           {unitWorkData &&
@@ -197,7 +197,7 @@ export default function Officer() {
                             className="bg-red-600 text-white w-full p-1 rounded border-b"
                             onClick={() => handleDelete(item.name, item._id)}
                           >
-                            Delete
+                            Hapus
                           </button>
                         </td>
                       </tr>
