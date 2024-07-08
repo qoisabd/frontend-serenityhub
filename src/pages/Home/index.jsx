@@ -25,7 +25,7 @@ export default function Home() {
       <section id="laporan">
         <div className="py-12 min-h-screen md:pt-24 heroBack">
           <h1 className="text-center text-2xl md:text-5xl out text-slate-900 font-extrabold mb-8 md:mb-16 uppercase">
-            list report
+            list laporan
           </h1>
           <ListReport
             searchTerm={searchTerm}
