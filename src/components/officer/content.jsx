@@ -19,7 +19,7 @@ export default function ContentOfficer() {
           <GuardRoute
             element={
               <SearchAndListReport
-                title="Laporan Unit Kerja"
+                title="Laporan Masuk"
                 url={`/officer/report/${auth.user.unitWork}`}
               />
             }
@@ -32,7 +32,7 @@ export default function ContentOfficer() {
           <GuardRoute
             element={
               <SearchAndListReport
-                title="Laporan Unit Kerja"
+                title="Laporan Masuk"
                 url={`/officer/report/${auth.user.unitWork}`}
               />
             }
@@ -45,7 +45,7 @@ export default function ContentOfficer() {
           <GuardRoute
             element={
               <SearchAndListReport
-                title="Laporan Saya"
+                title="Laporan Selesai"
                 url={`/officer/report/my/${auth.user._id}`}
               />
             }

@@ -19,9 +19,9 @@ export default function Home() {
       <section id="alurAduan">
         <TimeLine />
       </section>
-      {/* <section id="kategori">
+      <section id="kategori">
         <Categories />
-      </section> */}
+      </section>
       <section id="laporan">
         <div className="py-12 min-h-screen md:pt-24 heroBack">
           <h1 className="text-center text-2xl md:text-5xl out text-slate-900 font-extrabold mb-8 md:mb-16 uppercase">

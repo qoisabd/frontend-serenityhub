@@ -66,7 +66,7 @@ const Categories = () => {
         });
       }
     } catch (error) {
-      toast.error(`Error deleting category: ${error}`, {
+      toast.error(`Gagal menghapus kategori: ${error}`, {
         position: 'top-right',
         autoClose: 3000,
         hideProgressBar: false,

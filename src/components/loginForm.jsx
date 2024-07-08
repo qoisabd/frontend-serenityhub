@@ -92,7 +92,7 @@ const LoginForm = () => {
                     htmlFor="password"
                     className="mb-2 block text-sm font-medium text-gray-900"
                   >
-                    Password
+                    Kata Sandi
                   </label>
                   <input
                     type="password"

@@ -31,7 +31,7 @@ export default function TopBar() {
               className=" flex items-center block w-full text-left  font-bold mb-2 hover:bg-blue-500"
             >
               <RiLockPasswordFill />
-              Password
+            Kata Sandi
             </Link>
             <Link
               to={'/logout'}

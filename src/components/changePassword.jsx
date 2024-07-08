@@ -89,7 +89,7 @@ export default function ChangePassword() {
           </div>
           <div className="flex items-center mb-2 md:mb-4 mx-auto">
             <h2 className="md:text-4xl ml-4 text-lg font-semibold text-primary-600">
-              Change Password
+              Ganti Kata Sandi
             </h2>
           </div>
           <div
@@ -104,7 +104,7 @@ export default function ChangePassword() {
                 <form onSubmit={handleChangePassword} className="space-y-4 ">
                   <div className="flex flex-col">
                     <label className="block mb-2 text-xs md:text-base text-gray-900 font-semibold">
-                      Current Password:
+                      Kata Sandi Sekarang:
                     </label>
                     <input
                       autoComplete="off"
@@ -122,7 +122,7 @@ export default function ChangePassword() {
                   </div>
                   <div className="flex flex-col">
                     <label className="block mb-2 text-xs md:text-base text-gray-900 font-semibold">
-                      New Password:
+                      Kata Sandi Baru:
                     </label>
                     <input
                       autoComplete="off"
@@ -140,7 +140,7 @@ export default function ChangePassword() {
                   </div>
                   <div className="flex flex-col">
                     <label className="block mb-2 text-xs md:text-base text-gray-900 font-semibold">
-                      Confirm New Password:
+                      Ketik Ulang Kata Sandi:
                     </label>
                     <input
                       autoComplete="off"

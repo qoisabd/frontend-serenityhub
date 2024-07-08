@@ -47,19 +47,22 @@ function Footer() {
               <a href='#alurAduan'>
                 <div className='text-center text-base sm:text-lg text-white transition duration-200 hover:text-blue-600 md:text-start'>Alur Aduan</div>
               </a>
+              <a href='#kategori'>
+                <div className='text-center text-base sm:text-lg text-white transition duration-200 hover:text-blue-600 md:text-start'>Kategori</div>
+              </a>
               <a href='#laporan'>
                 <div className='text-center text-base sm:text-lg text-white transition duration-200 hover:text-blue-600 md:text-start'>Laporan</div>
               </a>
-              <Link to={auth.user? '/dashboard': '/login'} className='text-center text-base sm:text-lg text-white transition duration-200 hover:text-blue-600 md:text-start underlined'>
+              {/* <Link to={auth.user? '/dashboard': '/login'} className='text-center text-base sm:text-lg text-white transition duration-200 hover:text-blue-600 md:text-start underlined'>
                {auth.user? 'Dashboard': 'Login'}
-              </Link>
+              </Link> */}
             </div>
           </div>
           <hr className='bg-white' />
           <div className='flex items-center justify-between px-4 py-4 text-white md:px-8'>
-            <h5 className='text-xs md:text-base'>Developed by <a className='text-blue-500' href='#'>Qois Abdul Qudus</a> 2024 v1.0 © SerenityHub</h5>
+            <h5 className='text-xs md:text-base'>Developed by <a className='text-blue-500' href='https://instagram.com/doelkussoy/'>Doel Kussoy</a> 2024 v1.0 © <a href='https://dishub.serangkota.go.id/'>Dishub Kota Serang</a></h5>
             <button onClick={scrollToTop} className={`transition duration-200 hover:text-blue-500 text-xs md:text-base ${isVisible ? 'block' : 'hidden'}`}>
-              Back to top
+              Kembali ke atas
             </button>
           </div>
         </div>

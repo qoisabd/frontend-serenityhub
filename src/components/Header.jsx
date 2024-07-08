@@ -45,6 +45,11 @@ const Header = () => {
                 </a>
               </li>
               <li>
+                <a href='#kategori' className='font-semibold block rounded py-2 pl-3 pr-4 text-gray-950 hover:bg-gray-100 transition duration-300  md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 '>
+                  Kategori
+                </a>
+              </li>
+              <li>
                 <a href='#laporan' className='font-semibold block rounded py-2 pl-3 pr-4 text-gray-950 hover:bg-gray-100 transition duration-300  md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 '>
                   Laporan
                 </a>

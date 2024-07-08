@@ -107,7 +107,7 @@ const RegisterForm = () => {
                     htmlFor="password"
                     className="mb-2 block text-sm font-medium text-gray-900"
                   >
-                    Password
+                    Kata Sandi
                   </label>
                   <input
                     type="password"
@@ -116,7 +116,7 @@ const RegisterForm = () => {
                     value={form.password}
                     onChange={(e) => handleChange(e, 'password')}
                     className="focus:outline-none focus:ring-1 focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 placeholder-gray-400 sm:text-sm"
-                    placeholder=""
+                    placeholder="********"
                     required={true}
                     autoComplete="off"
                   />
@@ -126,7 +126,7 @@ const RegisterForm = () => {
                     htmlFor="confirmPassword"
                     className="mb-2 block text-sm font-medium text-gray-900"
                   >
-                    Konfirmasi Password
+                    Ketik Ulang Kata Sandi
                   </label>
                   <input
                     type="password"
@@ -135,7 +135,7 @@ const RegisterForm = () => {
                     value={form.confirmPassword}
                     onChange={(e) => handleChange(e, 'confirmPassword')}
                     className="focus:outline-none focus:ring-1 focus:ring-primary-600 focus:border-primary-600 block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-gray-900 placeholder-gray-400 sm:text-sm"
-                    placeholder=""
+                    placeholder="********"
                     required={true}
                     autoComplete="off"
                   />

@@ -270,7 +270,7 @@ export default function DetailReport() {
       if (data.status === 'ok') {
         toast.success(`Laporan berhasil dikirim`, {
           position: 'top-right',
-          autoClose: 3000,
+          autoClose: 9000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -278,9 +278,9 @@ export default function DetailReport() {
         });
         navigate(0);
       } else {
-        toast.error(`Failed assign report to unit works`, {
+        toast.error(`Gagal mengirim laporan ke petugas`, {
           position: 'top-right',
-          autoClose: 3000,
+          autoClose: 9000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
@@ -290,7 +290,7 @@ export default function DetailReport() {
     } catch (error) {
       toast.error(error, {
         position: 'top-right',
-        autoClose: 3000,
+        autoClose: 9000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
@@ -316,7 +316,7 @@ export default function DetailReport() {
         },
       );
       if (result.data.status === 'ok') {
-        toast.success(`Delete report successful`, {
+        toast.success(`Laporan berhasil dihapus`, {
           position: 'top-right',
           autoClose: 3000,
           hideProgressBar: false,
@@ -326,7 +326,7 @@ export default function DetailReport() {
         });
         navigate('/dashboard/report');
       } else {
-        toast.error(`Delete report failed`, {
+        toast.error(`Gagal menghapus laporan`, {
           position: 'top-right',
           autoClose: 3000,
           hideProgressBar: false,
