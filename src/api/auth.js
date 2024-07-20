@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 export async function registerUser(data) {
-  return await axios.post(`http://localhost:5500/register`, data);
+  return await axios.post(`http://localhost:5000/register`, data);
 }
 
 export async function login(email, password) {
-  return await axios.post(`http://localhost:5500/login`, {
+  return await axios.post(`http://localhost:5000/login`, {
     email,
     password,
   });
