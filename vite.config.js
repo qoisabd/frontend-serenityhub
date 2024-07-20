@@ -39,7 +39,7 @@ export default defineConfig(({ mode }) => {
               },
             },
             {
-              urlPattern: 'http://localhost:5500',
+              urlPattern: 'http://localhost:8000',
               handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'serenitylink-image',
