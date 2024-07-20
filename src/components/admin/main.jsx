@@ -54,7 +54,7 @@ const ReportCard = () => {
     <div className='m-2 my-8 md:px-4'>
       <div className='animate__fadeIn animate__animated animate__delay-0.5s box-border rounded-3xl bg-white px-4 py-8 drop-shadow md:p-12'>
         <div className=''>
-          <h2 className='text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl capitalize'>Lokasi Laporan</h2>
+          <h2 className='text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl capitalize'>Dashboard</h2>
           <div className='grid grid-cols-1 gap-5 sm:grid-cols-4 mt-4'>
             {Object.entries(statusCount).map(([status, count]) => (
               <div key={status} className='group bg-white hover:bg-indigo-600 overflow-hidden shadow sm:rounded-lg cursor-pointer transition-all duration-100 ease-in'>
@@ -68,6 +68,8 @@ const ReportCard = () => {
             ))}
           </div>
         </div>
+        <br></br>
+        <h4 className='text-3xl font-extrabold tracking-tight text-gray-900  capitalize'>Lokasi Laporan</h4>
         <div className='col-span-1 my-4'>
           <MapContainer center={[defaultCoord.latitude, defaultCoord.longitude]} zoom={4} scrollWheelZoom={true} className='h-64 w-full mt-4'>
             <TileLayer attribution='&copy; <a n href="http://osm.org/copyright">OpenStreetMap</a>' url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />

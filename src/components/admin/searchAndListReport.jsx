@@ -83,7 +83,7 @@ export default function SearchAndListReport() {
               <option value='' disabled>
                 Status
               </option>
-              <option value=''>all</option>
+              {/* <option value=''>all</option> */}
               <option value='Menunggu'>Menunggu</option>
               <option value='Diproses'>Diproses</option>
               <option value='Selesai'>Selesai</option>

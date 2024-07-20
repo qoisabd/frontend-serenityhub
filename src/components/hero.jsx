@@ -9,12 +9,11 @@ grid grid-cols-1 items-center px-4 pb-20 pt-5 md:px-20 lg:grid-cols-2'
         <div className='animate__fadeInLeft animate__animated animate__delay-0.7s order-last py-4 md:order-first md:py-0 lg:pr-8'>
           <div className='flex items-center'>
             <div className='h-[0.15rem] w-16 bg-blue-600'></div>
-            <div className='ml-4 md:text-2xl text-xl  font-semibold text-blue-600'>Selamat Datang Di</div>
+            <div className='ml-4 md:text-2xl text-xl  font-semibold text-blue-600'>DISHUB KOTA SERANG</div>
           </div>
           <h1 className='mt-0 text-2xl font-semibold tracking-wider text-slate-900 md:mt-4 md:text-5xl'>SerenityHub :</h1>
           <h1 className='mt-0 text-2xl font-semibold tracking-wider text-slate-900 md:mt-4 md:text-5xl'>Platform Pengaduan</h1>
-          <h1 className='mt-0 text-2xl font-semibold tracking-wider text-slate-900 md:mt-4 md:text-5xl'>Masyarakat Dishub</h1>
-          <h1 className='mt-0 text-2xl font-semibold tracking-wider text-slate-900 md:mt-4 md:text-5xl'>Kota Serang</h1>
+          <h1 className='mt-0 text-2xl font-semibold tracking-wider text-slate-900 md:mt-4 md:text-5xl'>Masyarakat</h1>
           <p className='mt-4 text-[1rem] leading-6 text-[#64748BBF] text-opacity-100'>
             {' '}
             <span className='font-medium text-blue-600'>SerenityHub</span> adalah aplikasi yang berfungsi sebagai <span>platform pengaduan masyarakat</span>. Aplikasi ini memfasilitasi komunikasi antara{' '}

@@ -1,7 +1,7 @@
 {
   "name": "frontend-serenityhub",
-  "private": true,
   "version": "1.0.0",
+  "description": "Front-End for SerenityHub",
   "type": "module",
   "scripts": {
     "dev": "vite --host",

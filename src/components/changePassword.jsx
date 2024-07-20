@@ -16,8 +16,8 @@ export default function ChangePassword() {
     e.preventDefault();
 
     if (passwordData.newPassword !== passwordData.confirmPassword) {
-      alert('Password dan Konfirmasi Password harus sama');
-      toast.warning(`New Password & Confirm Password must be same`, {
+      alert('Mohon isi dengan benar');
+      toast.warning(`Kata sandi baru dan konfirmasi kata sandi harus sama`, {
         position: 'top-right',
         autoClose: 3000,
         hideProgressBar: false,
@@ -140,7 +140,7 @@ export default function ChangePassword() {
                   </div>
                   <div className="flex flex-col">
                     <label className="block mb-2 text-xs md:text-base text-gray-900 font-semibold">
-                      Ketik Ulang Kata Sandi:
+                      Konfirmasi Kata Sandi:
                     </label>
                     <input
                       autoComplete="off"
@@ -161,7 +161,7 @@ export default function ChangePassword() {
                       className="bg-blue-600 text-white w-full p-2 rounded"
                       onClick={(e) => handleChangePassword(e)}
                     >
-                      Change
+                      Kirim
                     </button>
                   </div>
                 </form>

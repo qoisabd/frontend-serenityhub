@@ -363,6 +363,8 @@ export default function DetailReport() {
         <p>Loading...</p>
       ) : (
         <>
+        <h2 className='md:text-2xl text-lg font-semibold text-slate-900'>Detail Laporan</h2>
+        <br></br>
           <div className="flex flex-col mb-4">
             {auth.user.role === 'admin' ? (
               <div className=" text-right rounded-lg">
@@ -402,7 +404,7 @@ export default function DetailReport() {
                   </div> */}
                   <div className="flex flex-col">
                     <label className="font-semibold text-gray-900">
-                      Status:
+                      Status: 
                     </label>
                     <p className="mb-4">{report.status}</p>
                   </div>
@@ -509,9 +511,6 @@ export default function DetailReport() {
             {/* Form Officer Report */}
             {!report.officerReport && auth.user.role === 'officer' ? (
               <div className="">
-                <label className="block mb-2 text-xs md:text-base text-gray-900 font-semibold underline">
-                  Buat Laporan
-                </label>
                 <div className="flex flex-col">
                   <label className="block mb-2 text-xs md:text-base text-gray-900 font-semibold">
                     Pesan:
@@ -618,7 +617,7 @@ export default function DetailReport() {
                   value={selectedOption || ''}
                 >
                   <option value="" disabled>
-                    Select an option
+                    Piih unit kerja
                   </option>
                   {unitWorks.map((option) => (
                     <option key={option._id} value={option._id}>

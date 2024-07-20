@@ -88,9 +88,7 @@ export default function Officer() {
           data-aos-offset="0"
         >
           <div className="flex items-center justify-center animate__fadeIn animate__animated animate__delay-0.5s mb-6">
-            <h2 className="md:text-2xl text-lg font-semibold text-slate-900">
-              Daftar Petugas
-            </h2>
+          <h1 className='text-center text-2xl md:text-5xl out text-primary-600 font-extrabold mb-8 uppercase'>daftar petugas</h1>
           </div>
           <div className="flex flex-row text-left justify-between ">
             <div className="relative w-44 md:w-[40%] z-40 mr-2">
@@ -143,7 +141,7 @@ export default function Officer() {
                 to="/dashboard/officer/new"
                 className="text-center text-white md:text-base text-[0.65rem]"
               >
-                Tambah <span className="hidden md:inline">petugas</span>
+                Tambah <span className="hidden md:inline">Petugas</span>
               </Link>
             </button>
           </div>
@@ -156,11 +154,11 @@ export default function Officer() {
                       no
                     </th>
                     <th scope="col" className="px-6 py-3">
-                      nama
+                      nama petugas
                     </th>
-                    <th scope="col" className="px-6 py-3">
-                      level
-                    </th>
+                    {/* <th scope="col" className="px-6 py-3">
+                      Staff
+                    </th> */}
                     <th scope="col" className="px-6 py-3">
                       unit kerja
                     </th>
@@ -172,16 +170,16 @@ export default function Officer() {
                 <tbody className="md:text-base text-[0.65rem]">
                   {officerData &&
                     officerData.map((item, index) => (
-                      <tr key={index} className="group cursor-pointer">
+                      <tr key={index}>
                         <td className="py-2 md:py-4 px-6 border-b group-hover:text-gray-600 group-hover:font-semibold group-hover:bg-gray-200 ease-in transition-all duration-100">
                           {index + 1}
                         </td>
                         <td className="py-2 md:py-4 px-6 border-b group-hover:text-gray-600 group-hover:font-semibold group-hover:bg-gray-200 ease-in transition-all duration-100">
                           {item.name}
                         </td>
-                        <td className="py-2 md:py-4 px-6 border-b group-hover:text-gray-600 group-hover:font-semibold group-hover:bg-gray-200 ease-in transition-all duration-100">
+                        {/* <td className="py-2 md:py-4 px-6 border-b group-hover:text-gray-600 group-hover:font-semibold group-hover:bg-gray-200 ease-in transition-all duration-100">
                           Petugas
-                        </td>
+                        </td> */}
                         <td className="py-2 md:py-4 px-6 border-b group-hover:text-gray-600 group-hover:font-semibold group-hover:bg-gray-200 ease-in transition-all duration-100">
                           {unitWorkData &&
                             unitWorkData

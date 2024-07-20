@@ -126,7 +126,7 @@ const RegisterForm = () => {
                     htmlFor="confirmPassword"
                     className="mb-2 block text-sm font-medium text-gray-900"
                   >
-                    Ketik Ulang Kata Sandi
+                    Konfirmasi Kata Sandi
                   </label>
                   <input
                     type="password"
