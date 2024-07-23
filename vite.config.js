@@ -39,7 +39,7 @@ export default defineConfig(({ mode }) => {
               },
             },
             {
-              urlPattern: 'http://localhost:8000',
+              urlPattern: 'https://serenityhub.netlify.app/',
               handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'serenitylink-image',
