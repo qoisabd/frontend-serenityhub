@@ -1,5 +1,23 @@
 import axios from 'axios';
 
+const axios = require('axios');
+
+axios.get('https://serenityhub.up.railway.app')
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+
+  axios.put('https://serenityhub.up.railway.app', data)
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.log(error);
+  });
+
 export async function registerUser(data) {
   return await axios.post(`https://serenityhub.up.railway.app/register`, data);
 }

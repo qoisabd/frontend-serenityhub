@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite --host",
-    "dev" : "vite --host",
+    "dev": "vite --host",
     "build": "vite build --mode production",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -14,7 +14,7 @@
     "@reduxjs/toolkit": "^1.9.7",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
-    "axios": "^1.6.2",
+    "axios": "^1.7.2",
     "dotenv": "^16.3.1",
     "leaflet": "^1.9.4",
     "prop-types": "^15.8.1",
