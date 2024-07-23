@@ -34,7 +34,8 @@ function Footer() {
         <div className='mx-auto px-4 pt-5'>
           <div className='mb-20 flex flex-col gap-8 justify-center md:justify-around md:flex-row '>
             <div>
-              <h3 className='max-w-[496px] text-xl font-semibold text-white sm:text-5xl'>Apapun masalah bisa diatasi, laporkan masalah kamu disini !</h3>
+              <h3 className='max-w-[496px] text-xl font-semibold text-white sm:text-5xl'>Apapun masalah bisa diatasi,</h3>
+              <h3 className='max-w-[496px] text-xl font-semibold text-white sm:text-5xl'>laporkan masalah kamu disini !</h3>
               <div className='mt-5 flex items-center '>
                 <div className='h-[0.15rem] w-12 bg-pink-200'></div>
                 <h2 className='ml-4 text-lg font-semibold leading-tight text-pink-200'>DISHUB KOTA SERANG</h2>

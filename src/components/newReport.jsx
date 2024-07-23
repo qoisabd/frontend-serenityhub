@@ -306,6 +306,7 @@ const NewReport = () => {
                   onChange={handleChange}
                   minLength="5"
                   maxLength="50"
+                  placeholder='Contoh: Jalan Rusak, Pohon Tumbang'
                   required
                   className="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 />
@@ -320,6 +321,7 @@ const NewReport = () => {
                   onChange={handleChange}
                   minLength="5"
                   maxLength="250"
+                  placeholder='Contoh: Jalan rusak parah, tidak bisa dilewati'
                   required
                   className="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 />
@@ -334,7 +336,7 @@ const NewReport = () => {
                   value={report.address}
                   onChange={handleChange}
                   minLength="10"
-                  placeholder="nama jalan atau tempat"
+                  placeholder='Contoh: Jalan Pahlawan, RT 01 RW 02'
                   required
                   className="bg-gray-200 border border-gray-300 text-gray-900 text-sm rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 />

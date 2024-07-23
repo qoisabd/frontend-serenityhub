@@ -169,6 +169,7 @@ const NewKategori = () => {
           <input
             type="text"
             name="title"
+            placeholder='Masukkan nama kategori'
             value={newCategory.name}
             onChange={(e) =>
               setNewCategory({
