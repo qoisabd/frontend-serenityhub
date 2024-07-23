@@ -39,7 +39,7 @@ export default defineConfig(({ mode }) => {
               },
             },
             {
-              urlPattern: 'https://serenityhub.up.railway.app/',
+              urlPattern: 'http://localhost:5500',
               handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'serenitylink-image',
