@@ -87,7 +87,7 @@ const ReportCard = () => {
         <div className=''>
           <h2 className='text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl capitalize'>Dashboard</h2>
           <br></br>
-          <div className="flex justify-between mb-4">
+          <div className="flex justify-between">
           <h4 className="text-lg font-bold text-gray-900">Total Laporan : {totalCount}</h4>
           </div>
           <Chart
