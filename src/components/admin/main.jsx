@@ -90,6 +90,13 @@ const ReportCard = () => {
           <div className="flex justify-between mb-4">
           <h4 className="text-lg font-bold text-gray-900">Total Laporan : {totalCount}</h4>
           </div>
+          <Chart
+            chartType="PieChart"
+            data={chartData}
+            options={chartOptions}
+            width="100%"
+            height="400px"
+          />
           <div className='grid grid-cols-1 gap-5 sm:grid-cols-4 mt-4'>
             {Object.entries(statusCount).map(([status, count]) => (
               <div key={status} className='group bg-white hover:bg-indigo-600 overflow-hidden shadow sm:rounded-lg cursor-pointer transition-all duration-100 ease-in'>
@@ -103,13 +110,6 @@ const ReportCard = () => {
               </div>
             ))}
           </div>
-          <Chart
-            chartType="PieChart"
-            data={chartData}
-            options={chartOptions}
-            width="100%"
-            height="400px"
-          />
         </div>
         <br></br>
         <h4 className='text-3xl font-extrabold tracking-tight text-gray-900  capitalize'>Lokasi Laporan</h4>
