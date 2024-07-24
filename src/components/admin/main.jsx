@@ -37,8 +37,8 @@ const ReportCard = () => {
 
   const MapMarker = (status) => {
     const markerColors = {
-      Menunggu: 'yellow',
-      Diproses: 'blue',
+      Menunggu: 'red',
+      Diproses: 'yellow',
       Selesai: 'green',
     };
 
