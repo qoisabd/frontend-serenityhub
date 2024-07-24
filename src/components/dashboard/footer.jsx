@@ -32,9 +32,9 @@ function Footer() {
         <p className='ml-4 md:text-xs text-[0.6rem] font-semibold text-black'>
           Developed by{' '}
           <a className='text-blue-500' href='https://instagram.com/doelkussoy/'>
-            Qois Abdul Qudus
+            Doel Kussoy
           </a>{' '}
-          2024 v1.0 © <a href='https://dishub.serangkota.go.id/'>Dishub Kota Serang</a>
+          2024 v1.0 © <a className='text-blue-500' href='https://dishub.serangkota.go.id/'>Dishub Kota Serang</a>
         </p>
       </footer>
     </>
