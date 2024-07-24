@@ -26,9 +26,9 @@ const Categories = () => {
           <h1 className='text-center text-2xl md:text-5xl out text-primary-600 font-extrabold mb-8 uppercase'>kategori</h1>
           <div className='flex flex-wrap justify-start '>
             {categoryData.map((category, index) => (
-              <div key={index} className='w-1/2 sm:w-1/5 md:w-1/5 lg:w-[14.2857%] group p-4 text-center mb-8 '>
+              <div key={index} className='w-1/2 sm:w-1/5 md:w-1/5 lg:w-[14.2857%] group p-4 text-center mb-8'>
                 <img
-                  className='mx-auto w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full group-hover:outline group-hover:outline-1 group-hover:outline-primary-600 duration-100 ease-out group-hover:ring-2 group-hover:ring-blue-500 shadow-lg'
+                  className='mx-auto w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12'
                   src={`${import.meta.env.VITE_HOST_SERENITY}/public/image/${category.image}`}
                   alt={category.name}
                 />

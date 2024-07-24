@@ -4,6 +4,8 @@ import axios from 'axios';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import L from 'leaflet';
+import { Chart } from 'react-google-charts';
 
 const ReportCard = () => {
   const auth = useSelector((state) => state.auth);
@@ -16,7 +18,7 @@ const ReportCard = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios(`${import.meta.env.VITE_HOST_SERENITY}/admin/report/coordinates?limit=100`, {
+      const result = await axios(`${import.meta.env.VITE_HOST_SERENITY}/admin/report/coordinates?limit=1000`, {
         headers: {
           Authorization: `Bearer ${auth.user ? auth.token : ''}`,
         },
@@ -30,6 +32,8 @@ const ReportCard = () => {
     acc[report.status] = (acc[report.status] || 0) + 1;
     return acc;
   }, {});
+
+  const totalCount = reports.length;
 
   const MapMarker = (status) => {
     const markerColors = {
@@ -50,28 +54,67 @@ const ReportCard = () => {
     return newIcon;
   };
 
+  const chartData = [
+    ['Status', 'Count'],
+    ...Object.entries(statusCount).map(([status, count]) => [status, count]),
+  ];
+
+  const chartOptions = {
+    pieHole: 0.4,
+    slices: [
+      {
+        color: '#FFA500',
+      },
+      {
+        color: '#32CD32',
+      },
+      {
+        color: '#FF0000',
+      },
+    ],
+    chartArea: { width: '50%' },
+    hAxis: {
+      minValue: 0,
+    },
+    vAxis: {
+      title: 'Count',
+    },
+  };
+
   return (
     <div className='m-2 my-8 md:px-4'>
       <div className='animate__fadeIn animate__animated animate__delay-0.5s box-border rounded-3xl bg-white px-4 py-8 drop-shadow md:p-12'>
         <div className=''>
           <h2 className='text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl capitalize'>Dashboard</h2>
+          <br></br>
+          <div className="flex justify-between mb-4">
+          <h4 className="text-lg font-bold text-gray-900">Total Laporan : {totalCount}</h4>
+          </div>
           <div className='grid grid-cols-1 gap-5 sm:grid-cols-4 mt-4'>
             {Object.entries(statusCount).map(([status, count]) => (
               <div key={status} className='group bg-white hover:bg-indigo-600 overflow-hidden shadow sm:rounded-lg cursor-pointer transition-all duration-100 ease-in'>
                 <div className='px-4 py-5 sm:p-6'>
                   <dl>
                     <dt className='text-sm leading-5 font-medium text-gray-500 group-hover:text-white truncate'>{status}</dt>
-                    <dd className='mt-1 text-3xl leading-9 font-semibold text-indigo-600 group-hover:text-white'>{count}</dd>
+                    <dd className='mt-1 text-3xl leading-9 font-semibold text-indigo-600 group-hover:text-white'>{count}
+                    </dd>
                   </dl>
                 </div>
               </div>
             ))}
           </div>
+          <Chart
+            chartType="PieChart"
+            data={chartData}
+            options={chartOptions}
+            width="100%"
+            height="400px"
+          />
         </div>
         <br></br>
         <h4 className='text-3xl font-extrabold tracking-tight text-gray-900  capitalize'>Lokasi Laporan</h4>
         <div className='col-span-1 my-4'>
-          <MapContainer center={[defaultCoord.latitude, defaultCoord.longitude]} zoom={4} scrollWheelZoom={true} className='h-64 w-full mt-4'>
+          <MapContainer center={[defaultCoord.latitude, defaultCoord.longitude]} zoom={5} scrollWheelZoom={true} className='h-64 w-full mt-4'>
             <TileLayer attribution='&copy; <a n href="http://osm.org/copyright">OpenStreetMap</a>' url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png' />
             {reports.map((report) => (
               <div key={report._id}>
@@ -83,8 +126,6 @@ const ReportCard = () => {
                 </Marker>
               </div>
             ))}
-
-            {/* <SetViewOnClick /> */}
           </MapContainer>
         </div>
       </div>

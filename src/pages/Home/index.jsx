@@ -8,8 +8,8 @@ import Footer from '../../components/footer';
 import Hero from '../../components/hero';
 
 export default function Home() {
-  const [searchTerm, setSearchTerm] = useState('');
-  const [currentPage, setCurrentPage] = useState(1);
+  const [searchTerm] = useState('');
+  const [currentPage] = useState(1);
   const reportsPerPage = 8;
 
   return (

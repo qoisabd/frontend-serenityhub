@@ -27,7 +27,7 @@ const Header = () => {
             aria-controls='navbar-default'
             aria-expanded='false'
           >
-            <span className='sr-only'>Open main menu</span>
+            <span className='sr-only'>Open Dashboard</span>
             <svg className='h-5 w-5' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 17 14'>
               <path stroke='currentColor' strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M1 1h15M1 7h15M1 13h15' />
             </svg>
@@ -59,6 +59,11 @@ const Header = () => {
                   {auth.user? 'Dashboard': 'Login'}
                 </Link>
               </li>
+              {/* <li>
+                <Link to={auth.user? '/dashboard': '/register'} className='font-semibold block rounded py-2 pl-3 pr-4 text-gray-950 hover:bg-gray-100 transition duration-300  md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-blue-700 underline '>
+                  {auth.user? 'Dashboard': 'Register'}
+                </Link>
+              </li> */}
             </ul>
           </div>
         </div>
