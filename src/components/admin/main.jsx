@@ -66,7 +66,7 @@ const ReportCard = () => {
   ];
 
   const chartOptions = {
-    pieHole: 0.3,
+    pieHole: 0.4,
     slices: [
       {
         color: "red",
@@ -78,13 +78,14 @@ const ReportCard = () => {
         color: "limegreen",
       },
     ],
-    chartArea: { width: "50%" },
+    chartArea: { width: "100%" },
     hAxis: {
       minValue: 0,
     },
     vAxis: {
       title: "Count",
     },
+    legend: "none",
   };
 
   return (
@@ -96,16 +97,16 @@ const ReportCard = () => {
           </h2>
           <br></br>
           <div className="flex justify-between">
-            <h4 className="text-lg font-bold text-gray-900">
+            <h2 className="text-lg font-bold text-black-500">
               Total Laporan : {totalCount}
-            </h4>
+            </h2>
           </div>
           <Chart
             chartType="PieChart"
             data={chartData}
             options={chartOptions}
-            width="75%"
-            height="250px"
+            width={"100%"}
+            height={"500px"}
           />
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-4 mt-4">
             {Object.entries(statusCount)
@@ -119,13 +120,19 @@ const ReportCard = () => {
               })
               .map(([status, count]) => (
                 <div
-                key={status}
-                className={`group overflow-hidden shadow sm:rounded-lg transition-all duration-100 ease-in
-                  ${status === 'Menunggu' ? 'bg-red-500' :
-                   status === 'Diproses' ? 'bg-yellow-500' :
-                   status === 'Selesai' ? 'bg-green-500' : 'bg-white hover:bg-green-600'}
+                  key={status}
+                  className={`group overflow-hidden shadow sm:rounded-lg transition-all duration-100 ease-in
+                  ${
+                    status === "Menunggu"
+                      ? "bg-red-500"
+                      : status === "Diproses"
+                        ? "bg-yellow-500"
+                        : status === "Selesai"
+                          ? "bg-green-500"
+                          : "bg-white hover:bg-green-600"
+                  }
                 `}
-              >
+                >
                   <div className="px-4 py-5 sm:p-6">
                     <dl>
                       <dt className="text-sm leading-5 font-medium text-white truncate">
