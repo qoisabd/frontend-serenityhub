@@ -32,14 +32,14 @@ export default defineConfig(({ mode }) => {
         workbox: {
           runtimeCaching: [
             {
-              urlPattern: new RegExp('^https://.{0,3}tile.openstreetmap.org'),
+              urlPattern: new RegExp('https://.{0,3}tile.openstreetmap.org'),
               handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'openstreetmap-tiles',
               },
             },
             {
-              urlPattern: 'https://backend-serenityhub.up.railway.app:5500',
+              urlPattern: 'https://backend-serenityhub-production.up.railway.app:5500',
               handler: 'StaleWhileRevalidate',
               options: {
                 cacheName: 'serenitylink-image',
