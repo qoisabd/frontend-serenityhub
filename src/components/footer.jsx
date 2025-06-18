@@ -38,7 +38,7 @@ function Footer() {
               <h3 className='max-w-[496px] text-xl font-semibold text-white sm:text-5xl'>laporkan masalah kamu disini !</h3>
               <div className='mt-5 flex items-center '>
                 <div className='h-[0.15rem] w-12 bg-pink-200'></div>
-                <h2 className='ml-4 text-lg font-semibold leading-tight text-pink-200'>DISHUB KOTA SERANG</h2>
+                <h2 className='ml-4 text-lg font-semibold leading-tight text-pink-200'>PEMKOT KOTA SERANG</h2>
               </div>
             </div>
             <div className='flex flex-col gap-2'>
@@ -61,7 +61,7 @@ function Footer() {
           </div>
           <hr className='bg-white' />
           <div className='flex items-center justify-between px-4 py-4 text-white md:px-8'>
-            <h5 className='text-xs md:text-base'>Developed by <a className='text-blue-500' href='https://qoisabdulqudus.netlify.app/'>Qois Abdul Qudus</a> 2024 v1.0 © <a className='text-blue-500' href='https://dishub.serangkota.go.id/'>Dishub Kota Serang</a></h5>
+            <h5 className='text-xs md:text-base'>Developed by <a className='text-blue-500' href='https://qoisabdulqudus.netlify.app/'>Qois Abdul Qudus</a> 2024 v1.0 © <a className='text-blue-500' href='https://serangkota.go.id/'>Pemkot Kota Serang</a></h5>
             <button onClick={scrollToTop} className={`transition duration-200 hover:text-blue-500 text-xs md:text-base ${isVisible ? 'block' : 'hidden'}`}>
               Back to top
             </button>
